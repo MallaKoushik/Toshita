@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a0030" />
+    <meta name="description" content="A birthday surprise for Toshita — a little celebration of you." />
+    <title>Happy Birthday, Toshita ✦</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="universe" aria-hidden="true"></canvas>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <div class="cursor cursor-core" aria-hidden="true"></div><div class="cursor cursor-halo" aria-hidden="true"></div>
+    <div class="reading-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+    <nav class="chapter-nav" aria-label="Birthday chapters">
+      <a class="nav-brand" href="#top" aria-label="Back to beginning"><span>✦</span><b>T</b></a>
+      <div class="nav-links">
+        <a href="#heart" aria-label="From the heart" data-label="The Note"><span></span></a>
+        <a href="#gallery" aria-label="Photo gallery" data-label="Memories"><span></span></a>
+        <a href="#memories" aria-label="Why you're amazing" data-label="The Little Things"><span></span></a>
+        <a href="#final" aria-label="Final birthday greeting" data-label="Make a Wish"><span></span></a>
+      </div>
+      <a class="nav-top" href="#top" aria-label="Back to top">↑</a>
+    </nav>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">✦ A Birthday Surprise ✦</p>
+          <h1 id="hero-title">Toshita</h1>
+          <p class="hero-subtitle">Today, the universe celebrates you <span>🌸</span></p>
+          <div class="date-line"><i></i><span>14 OCTOBER 2026 · 19TH BIRTHDAY</span><i></i></div>
+          <div class="birthday-countdown" id="birthday-countdown" aria-label="Countdown to Toshita's 19th birthday">
+            <div class="countdown-units"><span><b id="count-days">--</b><small>days</small></span><i>:</i><span><b id="count-hours">--</b><small>hrs</small></span><i>:</i><span><b id="count-minutes">--</b><small>min</small></span><i>:</i><span><b id="count-seconds">--</b><small>sec</small></span></div>
+          </div>
+          <a class="scroll-cue" href="#heart"><span>SCROLL</span><b></b></a>
+        </div>
+      </section>
+      <section class="section heart-section" id="heart">
+        <div class="section-inner reveal">
+          <p class="eyebrow script">✦ From the Heart ✦</p>
+          <details class="quote-panel keepsake"><summary><span class="keepsake-seal">✦</span><span class="keepsake-prompt">A little note, just for you</span><span class="keepsake-action">Open your note <b>＋</b></span></summary><div class="note-reveal"><span class="quote-mark open">“</span><p>Happy Birthday, Toshita! ❤️<br><br>I genuinely hope your special day brings you happiness, laughter, peace, and beautiful memories. May the year ahead bring you wonderful opportunities and success in everything you pursue.</p><span class="quote-mark close">”</span></div></details>
+        </div>
+      </section>
+      <section class="section gallery-section" id="gallery">
+        <div class="section-inner">
+          <div class="section-heading reveal"><p class="eyebrow script">✦ Moments to Keep ✦</p><h2>Happy Birthday, Toshita <span>❤️</span></h2><div class="gold-divider"></div></div>
+          <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+        </div>
+      </section>
+      <section class="section memories-section" id="memories">
+        <div class="section-inner"><div class="section-heading reveal"><p class="eyebrow script">✦ A Few Little Reminders ✦</p><h2>Why You're Amazing</h2><div class="gold-divider"></div></div>
+          <div class="memory-grid">
+            <article class="memory-card reveal"><span class="memory-number">01</span><h3>Your Smile Lights Up Every Room</h3><p>Your smile brings warmth and happiness to the moments around you.</p></article>
+            <article class="memory-card reveal"><span class="memory-number">02</span><h3>Your Kindness</h3><p>May you always be surrounded by kindness, care, and people who appreciate you.</p></article>
+            <article class="memory-card reveal"><span class="memory-number">03</span><h3>Beautiful Moments</h3><p>May this new year of your life be filled with wonderful experiences and memories.</p></article>
+            <article class="memory-card reveal"><span class="memory-number">04</span><h3>Keep Shining</h3><p>Keep following your dreams, growing, and becoming everything you want to be.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="final-section" id="final">
+        <div class="final-inner reveal"><p class="eyebrow script">✦ Your day, your universe ✦</p><h2>Happy Birthday,<br><em>Toshita!</em> <span>🎂</span></h2><p class="final-copy">May every dream you hold close come true this year. You deserve happiness, beautiful opportunities, and countless reasons to smile. 💫</p><div class="decorations" aria-label="Birthday decorations"><span>🎈</span><span>🎉</span><span>🎊</span><span>🌸</span><span>✨</span></div><button class="celebrate-button" id="celebrate">Celebrate Again <span>✦</span></button></div>
+        <footer>MADE WITH <span>♥</span> FOR TOSHITA</footer>
+      </section>
+    </main>
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="lightbox-close" aria-label="Close photo viewer">×</button><button class="lightbox-nav prev" aria-label="Previous photo">‹</button><figure><img alt="" /><figcaption></figcaption><span class="lightbox-count" aria-live="polite"></span></figure><button class="lightbox-nav next" aria-label="Next photo">›</button></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
